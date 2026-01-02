@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>Free File Search</title>
+</head>
+<body>
+  <h1>Free File Search</h1>
+
+  <p>on <a href="https://archive.org" target="_blank">INTERNET ARCHIVE</a></p>
+
+  <label
+    for="redirect"
+  >
+    <input
+      id="redirect"
+      for="redirect"
+      type="checkbox"
+    >
+    Redirect
+  </label>
+
+  <form autocomplete="off">
+    <input
+      id="file-name"
+      autofocus
+      onkeydown="searchWithEnter(event)"
+    >
+
+    <button
+      type="button"
+      onclick="search()"
+    >
+      Search
+    </button>
+  </form>
+
+  <p>Search for <i>publicly available</i> files (books, documents, etc.) using <a href="https://archive.org/advancedsearch.php" target="_blank">advanced search syntax</a>.</p>
+
+  <hr>
+
+  <p>by <a href="https://github.com/joaoguimaraens">@joaoguimaraens</a></p>
+
+  <script src="index.js" async></script>
+</body>
+</html>
